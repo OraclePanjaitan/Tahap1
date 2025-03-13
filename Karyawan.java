@@ -30,4 +30,16 @@ public class Karyawan{
         System.out.printf("Gaji Pokok : $ %.2f\n", gajiPokok);
         System.out.printf("Perusahaan : %s\n\n", NPerusahaan.getNamaPerusahaan());
     }
+
+    // Penambahan Method Hitung Gaji
+    public double hitungGaji(){
+        double totalGaji = gajiPokok;
+        return totalGaji;
+    }
+
+    // Penambahan Method InfoGaji
+    public void infoGaji() {
+        System.out.printf("Nama       : %s\n", nama);
+        System.out.printf("Total Gaji : $ %.2f\n\n", hitungGaji());
+    }
 }

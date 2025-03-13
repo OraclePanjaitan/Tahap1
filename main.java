@@ -5,17 +5,26 @@ public class main {
 
     public static void main(String[] args) {
 
-        // Membuat Objek Perusahaan
         Perusahaan Percetakan = new Perusahaan("PT. Kanisius");
 
         // Membuat Objek Karyawan
-        Karyawan Operator = new Karyawan("George Orwell", 5000, Percetakan);  
-        Karyawan Manager = new Karyawan("Setyo Wibowo", 7500, Percetakan);
-        Karyawan Supervisor = new Karyawan("Harlan Ellison", 6000, Percetakan);
+        Karyawan Karyawan = new Karyawan("George Orwell", 5000, Percetakan);  
+
+        // Membuat Objek Programmer
+        Programmer Programmer = new Programmer("Harlan Ellison", 6000, Percetakan, 2000);
+
+        // Membuat Objek Manager
+        Manager Manager = new Manager("Setyo Wibowo", 7500, Percetakan, 1500, "IT");
 
         // Menampilkan Data Karyawan
-        Operator.info();
+        Karyawan.info();
+        Programmer.info();
         Manager.info();
-        Supervisor.info();
+
+        System.out.println("\n\tHITUNG GAJI");
+        // Memanggil Method HitungGaji
+        Karyawan.infoGaji();
+        Programmer.infoGaji();
+        Manager.infoGaji();
     }
 }
