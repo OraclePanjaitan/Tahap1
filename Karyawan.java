@@ -14,7 +14,6 @@ public class Karyawan{
         this.NPerusahaan = NPerusahaan; 
     }
 
-    // Enkapsulasi Dan Validasi Nama
     public void setNama(String nama){
         if(nama.length() <4){
             System.out.println("Nama Terlalu Pendek");
@@ -27,17 +26,15 @@ public class Karyawan{
     // Method Info Menampilkan Informasi Karyawan 
     public void info(){
         System.out.printf("Nama       : %s\n", nama);
-        System.out.printf("Gaji Pokok : $ %.2f\n", gajiPokok);
+        System.out.println("Gaji Pokok : " + Util.formatRupiah(gajiPokok));
         System.out.printf("Perusahaan : %s\n\n", NPerusahaan.getNamaPerusahaan());
     }
 
-    // Penambahan Method Hitung Gaji
     public double hitungGaji(){
         double totalGaji = gajiPokok;
         return totalGaji;
     }
 
-    // Penambahan Method InfoGaji
     public void infoGaji() {
         System.out.printf("Nama       : %s\n", nama);
         System.out.printf("Total Gaji : $ %.2f\n\n", hitungGaji());

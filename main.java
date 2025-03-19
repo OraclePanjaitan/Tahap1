@@ -22,7 +22,6 @@ public class main {
         Manager.info();
 
         System.out.println("\n\tHITUNG GAJI");
-        // Memanggil Method HitungGaji
         Karyawan.infoGaji();
         Programmer.infoGaji();
         Manager.infoGaji();

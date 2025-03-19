@@ -10,7 +10,6 @@ public class Perusahaan {
         namaPerusahaan = nama; 
     }
 
-    // Method
     public String getNamaPerusahaan(){
         return namaPerusahaan;
     }
